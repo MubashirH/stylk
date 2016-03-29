@@ -1,5 +1,5 @@
-"""this ia doc string
-    A program to take input from user
+"""this is a doc string
+    A program to take input from the user and produce it back
 """
 def get_input():
     inp=input("what is ur name\n")
