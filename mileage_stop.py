@@ -9,7 +9,7 @@ def get_input():
     return float(start), float(end), float(cap), float(dist)
 
 def cal_stops(user):
-    print("no of re-fuel stops required = %f"%c)
+    print("no of re-fuel stops required = %d"%c)
       
 # main starts from here
 """This is a doc string
