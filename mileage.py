@@ -8,7 +8,7 @@ def get_odo_input():
     return float(start), float(end), float(liters)
 
 def cal_mileage(user):
-    print("The mileage of your vehicle is=%f"%a)
+    print("The mileage of your vehicle is=%f"%mileage)
       
 # main starts from here
 """This is a doc string
