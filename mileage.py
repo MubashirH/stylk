@@ -1,5 +1,5 @@
 """This is a doc string
-   This program calculating the mileage of a vehicle
+   This program calculating the number of stops required to re-fuel before reaching destination
 """
 def get_odo_input():
     start=float(input("Enter the start reading of odometer\n"))
@@ -7,8 +7,8 @@ def get_odo_input():
     liters=float(input("Enter the amount of gas in liters\n"))
     return float(start), float(end), float(liters)
 
-def cal_mileage(user):
-    print("The mileage of your vehicle is=%f"%mileage)
+def mileage(user):
+    print("The mileage of your vehicle is=%f"%mil)
       
 # main starts from here
 """This is a doc string
@@ -16,6 +16,6 @@ def cal_mileage(user):
 """
 start,end,liters=get_odo_input()
 diff=end-start
-mileage=diff/liters
-cal_mileage(mileage)
+mil=diff/liters
+mileage(mil)
     
