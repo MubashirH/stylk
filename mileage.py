@@ -16,6 +16,6 @@ def cal_mileage(user):
 """
 start,end,liters=get_odo_input()
 diff=end-start
-a=diff/liters
-cal_mileage(a)
+mileage=diff/liters
+cal_mileage(mileage)
     
