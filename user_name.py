@@ -8,10 +8,10 @@ def get_input():
     return str(first), str(last)
 
 def formated_output(first, last):
-    print '-Name:', str.lower(first), ',Surname:',  str.lower(last) 
-    print '-', str.upper(first), str.upper(last)
-    print '-'*20, '-'*10
-    print '-', str.capitalize(first), ',', str.capitalize(last)
+   print '-Name:', first.lower(), ',Surname:',  last.lower() 
+    print '-', first.upper(), last.upper()
+    print '-'*10, '-'*5
+    print '-', first.capitalize(), ',', last.capitalize()
     
 
 #main
