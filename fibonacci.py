@@ -17,6 +17,7 @@ def chec_fib(n):
         a=b
         b=c
         c=a+b
+        print c
     else:
         print '%d is not a fibonacci number'%n
         l=c-a
