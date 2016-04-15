@@ -8,15 +8,14 @@ def get_input():
     return str(first), str(last)
 
 def best_initials(first,last):
-    f=len(first)
-    l=len(last)
-    if l<f:
-        n=f-l
-        print first[:n+1],last[0]
-
-    elif f<l:
-        n=l-f
-        print first[0],last[:n+1]
+    n=-1
+    print 'Options for ur initials'
+    while len(first[:n])!=1 and len(last[:n])!=1:
+        n-=1
+        print first[:n], last[:n]
+    else:
+        print 'But this is the best solution of ur intitals'
+        print first[:n], last[:n]
 #main
 first,last=get_input()
 best_initials(first,last)
