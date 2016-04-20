@@ -24,7 +24,7 @@ def get_input():
 
 def webpage(head,sub,n,para):
     str='webpage.html'
-    print '\n'
+    print '\n\n'
     print str.center(80,' ')
     print '<html>'
     print ' <head>'
