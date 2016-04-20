@@ -18,20 +18,24 @@ def get_input():
             par=str(raw_input('Enter the paragraph'))
             i+=1
             final.append(par)
-        para='\n\n'.join(final)
+        para='\n     </p>\n     <p>'.join(final)
         
     return str(head), str(sub), int(n), str(para)
 
 def webpage(head,sub,n,para):
-    str='This is how ur website would look like'
-    print str.center(80,'-')
-    print '\n'
-    print head.center(80,' ').upper()
-    print '\n'
-    print '\n'
-    print sub.center(10,' ').capitalize()
-    print '\n'
-    print para
+    str='webpage.html'
+    print str.center(80,' ')
+    print '<html>'
+    print ' <head>'
+    print '  <title>'
+    print '         ',head.capitalize()
+    print '  </title>'
+    print ' </head>'
+    print ' <body>'
+    print '     <h1>',sub.capitalize(),'</h1>'
+    print '     <p>',para,'\n     </p>'
+    print ' </body>'
+    print '</html>'
              
     
 
