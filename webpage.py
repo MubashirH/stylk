@@ -7,15 +7,15 @@
 
 
 def get_input():
-    head=str(raw_input('Enter the header for your website'))
-    sub=str(raw_input('Enter the sub heading'))
+    head=raw_input('Enter the header for your website')
+    sub=raw_input('Enter the sub heading')
     print 'There must and should be 2 paragraphs for your website'
     n=int(raw_input('no of paragraphs u want to enter'))
     if n>=2:
         final=[]
         i=1
         for i in range(n):
-            par=str(raw_input('Enter the paragraph'))
+            par=raw_input('Enter the paragraph')
             i+=1
             final.append(par)
         para='\n     </p>\n     <p>'.join(final)
