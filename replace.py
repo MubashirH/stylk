@@ -8,9 +8,11 @@ def get_input():
 
 def replace(sen):
     print 'This is the entered string by you:--"',sen,'"'
-    old=str(raw_input('Enter the word u wanna replace:'))
-    new=str(raw_input('Enter the new word:'))
-    print 'This is the new edited string:---','"',sen.replace(old,new,-1),'"'
+    old=raw_input('Enter the word you want to replace:')
+    o=old.center(1,' ')
+    print o
+    new=raw_input('Enter the new word:')
+    print 'This is the new edited string:---','"',sen.replace(o,new,-1),'"'
     
 
 #main
