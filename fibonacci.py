@@ -1,38 +1,33 @@
 """This is a doc string
-    HTis program checks if a number is fibonacci number. If not, then it will print the closest Fibonacci number to the input number
+    This program checks if a number is fibonacci number
+    If not, then it will print the closest Fibonacci number to the input number
 """
-
 def get_input():
-    inp=int(raw_input('Enter the number'))
+    """get the input number"""
+    inp = int(raw_input('Enter the number'))
     return inp
 
-def chec_fib(n):
-    a=0
-    b=1
-    c=a+b
-    while c<=n:
-        if c==n:
-            print '%d is a fibonacci number'%n
-            return c
-        a=b
-        b=c
-        c=a+b
-        print c
+def chec_fib(n_n):
+    """cal if the number is true or false"""
+    a_a = 0
+    b_b = 1
+    c_c = a_a + b_b
+    while c_c <= n_n:
+        if c_c is n_n:
+            print n_n, 'is a fibonacci number'
+            return c_c
+        a_a = b_b
+        b_b = c_c
+        c_c = a_a + b_b
+    print n_n, 'is not a fibonacci number'
+    d_diff = c_c - a_a
+    x_x = n_n - d_diff
+    y_y = c_c - n_n
+    print d_diff, '-<', n_n, '>-', c_c
+    if x_x > y_y:
+        print c_c, 'is the closest Fibonacii number to', n_n
     else:
-        print '%d is not a fibonacci number'%n
-        l=c-a
-        x=n-l           #these three lines will compare whis is the closest fibonnica number to the input number
-        y=c-n
-        print l,'-<',n,'>-',c
-        if x>y:
-            print c,'is the closest Fibonacii number to %d'%n
-        else:
-            print l,'is the closest Fibonacii number to %d'%n
-
-#main
-
-n=get_input()
-chec_fib(n)
-
-
-    
+        print d_diff, 'is the closest Fibonacii number to', n_n
+if __name__ == '__main__':
+    n_n = get_input()
+    chec_fib(n_n)
