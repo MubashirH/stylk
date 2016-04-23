@@ -9,7 +9,7 @@
 def get_input():
     print "enter runs per ball"
     name=raw_input('Enter the batsman name:')
-    i=int(raw_input('Enter no of balls faced by the batsman:'))
+    i=int(raw_input('Enter total no of balls in the game:'))
     n=1
     runs=[]
     for n in range (1,i+1):
