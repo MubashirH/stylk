@@ -35,6 +35,6 @@ def cal_runs(r,ne,n):
     
         
 
-if __name_=='__main__':
+if __name__=='__main__':
     r,ne,n=get_input()
     cal_runs(r,ne,n)
