@@ -7,12 +7,12 @@ def get_input():
     """takes in multiple inputs"""
     name_1 = raw_input('name of 1st batsman:')
     name_2 = raw_input('name of 2nd batsman:')
-    print 'write the name of batsman who is on strike and non-strike'
+    print 'write the name of batsman who is on strike and not on strike'
     strike = raw_input('strike')
     n_strike = raw_input('non-strike')
     return name_1, name_2, strike, n_strike
 def beach_cal():
-    """using the inputs calculates the desired output and prints it"""
+    """using the inputs calculates the desired output and prints the output"""
     name_1, name_2, strike, n_strike = get_input()
     num = 1
     name_1_run = []
@@ -39,13 +39,13 @@ def beach_cal():
     print name_1_run, name_2_run
     print '*' * 10, name_1, '*' * 10
     print 'Total runs scored:', sum(name_1_run)
-    print 'Strike rate:', float(sum(name_1_run) / num)
+    print 'Strike rate:', float(sum(name_1_run) / len(name_1_run))
     print 'balls wasted', name_1_run.count(0)
     print 'boundaries', name_1_run.count(4)
     print 'sixes', name_1_run.count(6)
     print '*' * 10, name_2, '*' * 10
     print 'Total runs scored:', sum(name_2_run)
-    print 'Strike rate:', float(sum(name_2_run) / num)
+    print 'Strike rate:', float(sum(name_2_run) / len(name_2_run))
     print 'balls wasted', name_2_run.count(0)
     print 'boundaries', name_2_run.count(4)
     print 'sixes', name_2_run.count(6)    
