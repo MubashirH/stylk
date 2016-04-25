@@ -50,7 +50,10 @@ def stats(x_x, y_y):
     """this will print all the stats of individual players"""
     print '*' * 10, x_x, '*' * 10
     print 'Total runs scored:', sum(y_y)
-    print 'Strike rate:', float(sum(y_y) / len(y_y))
+    if sum(y_y) != 0:
+        print 'Strike rate:', float(sum(y_y) / len(y_y))
+    else:
+        print 'Strike rate is: 0'
     print 'balls wasted', y_y.count(0)
     print 'boundaries', y_y.count(4)
     print 'sixes', y_y.count(6)
