@@ -23,9 +23,9 @@ def beach_cal():
         if run is '.':
             run = 0
         i_run = int(run)
-        if name_1 is strike:
+        if name_1 == strike:
             name_1_run.append(i_run)
-        elif name_2 is strike:
+        elif name_2 == strike:
             name_2_run.append(i_run)
         if i_run % 2 is not 0:
             strike, n_strike = n_strike, strike
