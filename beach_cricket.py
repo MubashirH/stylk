@@ -34,7 +34,7 @@ def beach_cal():
         elif sum(name_2_run) is 60:
             break
         num += 1
-        if num % 7 is 0:
+        if (num-1) % 6 is 0:
             strike, n_strike = n_strike, strike
     print name_1_run, name_2_run
     print '*' * 10, name_1, '*' * 10
