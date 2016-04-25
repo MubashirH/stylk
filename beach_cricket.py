@@ -7,13 +7,22 @@ def get_input():
     """takes in multiple inputs"""
     name_1 = raw_input('name of 1st batsman: ')
     name_2 = raw_input('name of 2nd batsman: ')
-    strike_num = int(raw_input('Enter 1 if 1st batsman on strike or press 2: '))
-    if strike_num == 1:
-        strike = name_1
+    if name_1[-1] == '*':
+        strike = name_1[:-1]
         n_strike = name_2
-    else:
-        strike = name_2
+    elif name_2[-1] == '*':
+        strike = name_2[:-1]
         n_strike = name_1
+    else:
+        print 'please do mention who is on strike'
+        print 'now'
+        strike_num = int(raw_input('Enter 1 if 1st batsman on strike or press 2: '))
+        if strike_num == 1:
+            strike = name_1
+            n_strike = name_2
+        else:
+            strike = name_2
+            n_strike = name_1
     return name_1, name_2, strike, n_strike
 def beach_cal(name_1, name_2, strike, n_strike):
     """using the inputs calculates the desired output and prints the output"""
