@@ -8,18 +8,22 @@ def get_input():
     """takes the names of the players"""
     players = int(raw_input('Enter no of players'))
     ply = players + 1
-    i = 0
     names = []
-    for i in range(1,ply):
-        name = raw_input('Enter your name')
-        if name == '':
-            print '----------Please enter a name-----------'
-            name = raw_input('Enter the name')
+    i = 0
+    while i < ply-1:
+        name = raw_input('Enter the name')
+        while True:
+            if name == '':
+                print '----------Please enter a name-----------'
+                name = raw_input('Enter the name')
+            else:
+                break
         names.append(name)
+        i += 1
     return names, players
 def game(nam, rng):
     """Algorithm of the game"""
-    nums = random.sample(range(300,325),rng)
+    nums = random.sample(range(300, 325), rng)
     i = 0
     while i < rng:
         print nam[i], '=', nums[i]
@@ -40,6 +44,4 @@ def main():
     game(nam, rng)
 if __name__ == '__main__':
     main()
-    
-
 
