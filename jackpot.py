@@ -2,9 +2,9 @@
     Takes 2 numbers adds them and compares with a random genarated number
     if same them win
 """
-from sumops import dsum
 import sys
 import random
+from sumops import dsum
 def get_input():
     """takes 2 numbers as input """
     while True:
@@ -16,11 +16,11 @@ def get_input():
             print '5 digit number only'
             continue
     return num
-def jacpot(nu):
+def jacpot(nu_n):
     """main algorithm to calculate the jacpot"""
-    nu_n = str(nu)
-    n_sum = dsum(nu_n)
-    ran = random.randint(1,50)
+    nu_nu = str(nu_n)
+    n_sum = dsum(nu_nu)
+    ran = random.randint(1, 50)
     if n_sum == ran:
         print '!!!Congratualtions you have won the JACPOT!!!'
     else:
@@ -28,13 +28,14 @@ def jacpot(nu):
         print 'The wining number is', ran
         print 'Better luck next time'
 def main():
-    l = sys.argv
-    if (len(l)!= 1):
-        nu = sys.argv[1]
-        jacpot(nu)
+    """The  main"""
+    lgt = sys.argv
+    if len(lgt) != 1:
+        nu_n = sys.argv[1]
+        jacpot(nu_n)
     else:
-        nu = get_input()
-        jacpot(nu)
+        nu_n = get_input()
+        jacpot(nu_n)
 if __name__ == '__main__':
     main()
 
