@@ -29,15 +29,17 @@ def game(nam, rng):
     i = 0
     print
     print '----------These are the number cards-----------'
+    grt = []
     while i < rng:
         print nam[i], '=', nums[i]
-        i += 1
-    grt = []
-    for i  in range(rng):
         grt.append(nums[i])
+        i += 1
     arrange(grt, rng)
-    for i in range(rng):
+    print grt
+    i = 0
+    while i < rng:
         if nums[i] != grt[rng-1]:
+            i += 1
             continue
         else:
             print
