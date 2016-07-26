@@ -10,6 +10,8 @@ def get_input():
     ply = players + 1
     names = []
     i = 0
+    print
+    print '----------Enter the names-----------'
     while i < ply-1:
         name = raw_input('Enter the name')
         while True:
@@ -25,6 +27,8 @@ def game(nam, rng):
     """Algorithm of the game"""
     nums = random.sample(range(300, 325), rng)
     i = 0
+    print
+    print '----------These are the number cards-----------'
     while i < rng:
         print nam[i], '=', nums[i]
         i += 1
@@ -36,6 +40,7 @@ def game(nam, rng):
         if nums[i] != grt[rng-1]:
             continue
         else:
+            print
             print nam[i], 'has won the game'
             break
 def main():
