@@ -2,7 +2,7 @@
 import random
 def rinput():
     """takes a number and generates that no of random list of numbers"""
-    num = int(raw_input('enter number'))
+    num = int(raw_input('enter number:'))
     ln = random.sample(range(300,325),num)
     return ln, num
 def arrange(l, n):
@@ -13,9 +13,14 @@ def arrange(l, n):
         if l[i]>l[i+1]:
             l[i], l[i+1] = l[i+1], l[i]
     ans = l
+    return ans
 def main():
     """This is main"""
     l, n = rinput()
-    arrange(l, n)
+    print 'the random generated list'
+    print l
+    ans = arrange(l, n)
+    print 'the sorted list with largest number in end'
+    print ans
 if __name__ == '__main__':
     main()
